@@ -7,6 +7,9 @@ import Services from './pages/Services';
 import Pricing from './pages/Pricing';
 import Contacts from './pages/Contacts';
 
+import Impressum from './pages/Impressum';
+import Datenschutz from './pages/Datenschutz';
+
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +20,8 @@ function App() {
           <Route path="services" element={<Services />} />
           <Route path="pricing" element={<Pricing />} />
           <Route path="contacts" element={<Contacts />} />
+          <Route path="impressum" element={<Impressum />} />
+          <Route path="datenschutz" element={<Datenschutz />} />
         </Route>
       </Routes>
     </BrowserRouter>
