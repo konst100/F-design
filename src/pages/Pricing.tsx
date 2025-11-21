@@ -5,31 +5,31 @@ const Pricing = () => {
     const plans = [
         {
             name: 'Старт',
-            price: 'от $1000',
+            price: 'Индивидуально',
             description: 'Идеально для малого бизнеса и стартапов',
-            features: ['Лендинг пейдж (до 5 блоков)', 'Адаптивный дизайн', 'Базовая SEO оптимизация', 'Домен и хостинг на 1 год', '1 месяц поддержки']
+            features: ['Лендинг пейдж (до 5 блоков)', 'Адаптивный дизайн', 'Базовая SEO оптимизация', 'Домен и хостинг', 'Техническая поддержка']
         },
         {
             name: 'Бизнес',
-            price: 'от $2500',
+            price: 'Индивидуально',
             description: 'Комплексное решение для роста компании',
-            features: ['Корпоративный сайт (до 15 стр.)', 'Уникальный UI/UX дизайн', 'CMS (WordPress/Laravel)', 'Расширенная SEO стратегия', 'Интеграция с CRM', '3 месяца поддержки'],
+            features: ['Корпоративный сайт', 'Уникальный UI/UX дизайн', 'CMS (WordPress/Laravel)', 'Расширенная SEO стратегия', 'Интеграция с CRM', 'Приоритетная поддержка'],
             featured: true
         },
         {
             name: 'E-Commerce',
-            price: 'от $5000',
+            price: 'Индивидуально',
             description: 'Мощный инструмент для онлайн-продаж',
-            features: ['Интернет-магазин "под ключ"', 'Личный кабинет пользователя', 'Интеграция платежных систем', 'Синхронизация с 1С/складом', 'PWA приложение', '6 месяцев поддержки']
+            features: ['Интернет-магазин "под ключ"', 'Личный кабинет пользователя', 'Интеграция платежных систем', 'Синхронизация со складом', 'PWA приложение', 'Полное сопровождение']
         }
     ];
 
     return (
         <div className="container" style={{ padding: '6rem 2rem' }}>
             <div style={{ textAlign: 'center', marginBottom: '5rem' }}>
-                <h1 style={{ color: 'var(--primary)', marginBottom: '1.5rem' }}>Прозрачные Тарифы</h1>
+                <h1 style={{ color: 'var(--primary)', marginBottom: '1.5rem' }}>Гибкие Условия</h1>
                 <p style={{ fontSize: '1.2rem', maxWidth: '700px', margin: '0 auto', color: 'var(--text-light)' }}>
-                    Инвестируйте в результат. Мы предлагаем гибкие пакеты услуг, которые окупаются.
+                    Мы подходим к каждому проекту индивидуально. Свяжитесь с нами для обсуждения деталей.
                 </p>
             </div>
 
@@ -60,14 +60,14 @@ const Pricing = () => {
                                 alignItems: 'center',
                                 gap: '0.5rem'
                             }}>
-                                <Star size={16} fill="currentColor" /> ХИТ ПРОДАЖ
+                                <Star size={16} fill="currentColor" /> ПОПУЛЯРНОЕ
                             </div>
                         )}
 
                         <h3 style={{ marginBottom: '0.5rem', fontSize: '1.75rem' }}>{plan.name}</h3>
                         <p style={{ marginBottom: '2rem', opacity: 0.8 }}>{plan.description}</p>
 
-                        <div style={{ fontSize: '3rem', fontWeight: '800', marginBottom: '2.5rem', color: plan.featured ? 'var(--secondary)' : 'var(--primary)' }}>
+                        <div style={{ fontSize: '2rem', fontWeight: '800', marginBottom: '2.5rem', color: plan.featured ? 'var(--secondary)' : 'var(--primary)' }}>
                             {plan.price}
                         </div>
 
@@ -88,7 +88,7 @@ const Pricing = () => {
                             color: plan.featured ? 'var(--text)' : 'white',
                             border: plan.featured ? 'none' : '2px solid var(--primary)'
                         }}>
-                            Заказать пакет
+                            Обсудить проект
                         </button>
                     </div>
                 ))}
